@@ -11,6 +11,13 @@
 		C80A51BC2C1F7F0F0068C7A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80A51BB2C1F7F0F0068C7A8 /* ContentView.swift */; };
 		C80A51BE2C1F7F110068C7A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C80A51BD2C1F7F110068C7A8 /* Assets.xcassets */; };
 		C80A51C12C1F7F110068C7A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C80A51C02C1F7F110068C7A8 /* Preview Assets.xcassets */; };
+		C80A51C82C1F810F0068C7A8 /* courses.json in Resources */ = {isa = PBXBuildFile; fileRef = C80A51C72C1F810F0068C7A8 /* courses.json */; };
+		C80A51CA2C1F813E0068C7A8 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80A51C92C1F813E0068C7A8 /* WelcomeView.swift */; };
+		C80A51CC2C1F81580068C7A8 /* CurrentCourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80A51CB2C1F81580068C7A8 /* CurrentCourses.swift */; };
+		C80A51CE2C1F81650068C7A8 /* EnrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80A51CD2C1F81650068C7A8 /* EnrollView.swift */; };
+		C80A51D02C1F81760068C7A8 /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80A51CF2C1F81760068C7A8 /* CourseDetailView.swift */; };
+		C80A51D22C1F85390068C7A8 /* CoursesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80A51D12C1F85390068C7A8 /* CoursesDataModel.swift */; };
+		C82AC48E2C27418800CA5542 /* EffectsLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = C82AC48D2C27418800CA5542 /* EffectsLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,12 @@
 		C80A51BB2C1F7F0F0068C7A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C80A51BD2C1F7F110068C7A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C80A51C02C1F7F110068C7A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C80A51C72C1F810F0068C7A8 /* courses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = courses.json; sourceTree = "<group>"; };
+		C80A51C92C1F813E0068C7A8 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		C80A51CB2C1F81580068C7A8 /* CurrentCourses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCourses.swift; sourceTree = "<group>"; };
+		C80A51CD2C1F81650068C7A8 /* EnrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollView.swift; sourceTree = "<group>"; };
+		C80A51CF2C1F81760068C7A8 /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
+		C80A51D12C1F85390068C7A8 /* CoursesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C82AC48E2C27418800CA5542 /* EffectsLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +66,13 @@
 			isa = PBXGroup;
 			children = (
 				C80A51B92C1F7F0F0068C7A8 /* CourseTrackApp.swift */,
+				C80A51C92C1F813E0068C7A8 /* WelcomeView.swift */,
 				C80A51BB2C1F7F0F0068C7A8 /* ContentView.swift */,
+				C80A51CB2C1F81580068C7A8 /* CurrentCourses.swift */,
+				C80A51CD2C1F81650068C7A8 /* EnrollView.swift */,
+				C80A51CF2C1F81760068C7A8 /* CourseDetailView.swift */,
+				C80A51D12C1F85390068C7A8 /* CoursesDataModel.swift */,
+				C80A51C72C1F810F0068C7A8 /* courses.json */,
 				C80A51BD2C1F7F110068C7A8 /* Assets.xcassets */,
 				C80A51BF2C1F7F110068C7A8 /* Preview Content */,
 			);
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = CourseTrack;
+			packageProductDependencies = (
+				C82AC48D2C27418800CA5542 /* EffectsLibrary */,
+			);
 			productName = CourseTrack;
 			productReference = C80A51B62C1F7F0F0068C7A8 /* CourseTrack.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,9 @@
 				Base,
 			);
 			mainGroup = C80A51AD2C1F7F0F0068C7A8;
+			packageReferences = (
+				C82AC48C2C27418800CA5542 /* XCRemoteSwiftPackageReference "effects-library" */,
+			);
 			productRefGroup = C80A51B72C1F7F0F0068C7A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C80A51C82C1F810F0068C7A8 /* courses.json in Resources */,
 				C80A51C12C1F7F110068C7A8 /* Preview Assets.xcassets in Resources */,
 				C80A51BE2C1F7F110068C7A8 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C80A51CE2C1F81650068C7A8 /* EnrollView.swift in Sources */,
+				C80A51D22C1F85390068C7A8 /* CoursesDataModel.swift in Sources */,
 				C80A51BC2C1F7F0F0068C7A8 /* ContentView.swift in Sources */,
+				C80A51CA2C1F813E0068C7A8 /* WelcomeView.swift in Sources */,
+				C80A51CC2C1F81580068C7A8 /* CurrentCourses.swift in Sources */,
+				C80A51D02C1F81760068C7A8 /* CourseDetailView.swift in Sources */,
 				C80A51BA2C1F7F0F0068C7A8 /* CourseTrackApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,8 +310,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +338,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C82AC48C2C27418800CA5542 /* XCRemoteSwiftPackageReference "effects-library" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/effects-library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C82AC48D2C27418800CA5542 /* EffectsLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C82AC48C2C27418800CA5542 /* XCRemoteSwiftPackageReference "effects-library" */;
+			productName = EffectsLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C80A51AE2C1F7F0F0068C7A8 /* Project object */;
 }

@@ -11,7 +11,8 @@ import SwiftUI
 struct CourseTrackApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
+                .preferredColorScheme(.light)
         }
     }
 }

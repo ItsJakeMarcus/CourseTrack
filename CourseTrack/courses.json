@@ -1,0 +1,141 @@
+{
+    "subjects": [
+        {
+            "subjectName": "Computer Science",
+            "courses": [
+                {
+                    "courseTitle": "Introduction to Programming",
+                    "description": "Learn the basics of programming using Python. This course covers variables, control structures, functions, and basic data structures.",
+                    "instructors": [
+                        {
+                            "name": "Alice Johnson",
+                            "email": "alice.johnson@example.com"
+                        },
+                        {
+                            "name": "Bob Smith",
+                            "email": "bob.smith@example.com"
+                        }
+                    ]
+                },
+                {
+                    "courseTitle": "Data Structures and Algorithms",
+                    "description": "A comprehensive course on data structures and algorithms, including arrays, linked lists, stacks, queues, trees, and sorting algorithms.",
+                    "instructors": [
+                        {
+                            "name": "Carol White",
+                            "email": "carol.white@example.com"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subjectName": "Mathematics",
+            "courses": [
+                {
+                    "courseTitle": "Calculus I",
+                    "description": "An introductory course to calculus covering limits, derivatives, and integrals of single-variable functions.",
+                    "instructors": [
+                        {
+                            "name": "David Brown",
+                            "email": "david.brown@example.com"
+                        }
+                    ]
+                },
+                {
+                    "courseTitle": "Linear Algebra",
+                    "description": "Learn the fundamentals of linear algebra, including vector spaces, linear transformations, matrices, and eigenvalues.",
+                    "instructors": [
+                        {
+                            "name": "Eve Green",
+                            "email": "eve.green@example.com"
+                        },
+                        {
+                            "name": "Frank Black",
+                            "email": "frank.black@example.com"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subjectName": "History",
+            "courses": [
+                {
+                    "courseTitle": "World History",
+                    "description": "A survey of world history from ancient times to the present, covering major civilizations, events, and themes.",
+                    "instructors": [
+                        {
+                            "name": "Grace Hill",
+                            "email": "grace.hill@example.com"
+                        }
+                    ]
+                },
+                {
+                    "courseTitle": "History of the United States",
+                    "description": "An overview of the history of the United States from the colonial period to the modern era.",
+                    "instructors": [
+                        {
+                            "name": "Henry Adams",
+                            "email": "henry.adams@example.com"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subjectName": "Language Arts",
+            "courses": [
+                {
+                    "courseTitle": "English Literature",
+                    "description": "Study classic and contemporary works of English literature, analyzing themes, characters, and literary techniques.",
+                    "instructors": [
+                        {
+                            "name": "Isabel Clark",
+                            "email": "isabel.clark@example.com"
+                        }
+                    ]
+                },
+                {
+                    "courseTitle": "Creative Writing",
+                    "description": "Develop your creative writing skills through exercises, workshops, and the study of various writing genres.",
+                    "instructors": [
+                        {
+                            "name": "Jack Lee",
+                            "email": "jack.lee@example.com"
+                        },
+                        {
+                            "name": "Karen Walker",
+                            "email": "karen.walker@example.com"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "subjectName": "Science",
+            "courses": [
+                {
+                    "courseTitle": "Physics I",
+                    "description": "An introduction to the principles of physics, including motion, forces, energy, and momentum.",
+                    "instructors": [
+                        {
+                            "name": "Laura Scott",
+                            "email": "laura.scott@example.com"
+                        }
+                    ]
+                },
+                {
+                    "courseTitle": "Biology",
+                    "description": "Explore the fundamentals of biology, including cell structure, genetics, evolution, and ecology.",
+                    "instructors": [
+                        {
+                            "name": "Michael Davis",
+                            "email": "michael.davis@example.com"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
