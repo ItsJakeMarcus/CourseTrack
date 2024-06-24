@@ -29,7 +29,7 @@ struct WelcomeView: View {
                     Spacer()
                 }
                 
-                // Invisible NavigationLink that triggers after 3 seconds
+                
                 NavigationLink(destination: ContentView(), isActive: $navigateToContentView) {
                     EmptyView()
                 }

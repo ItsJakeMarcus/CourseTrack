@@ -16,8 +16,8 @@ struct DimmedBackgroundView: View {
 
 struct CurrentCourses: View {
     @Binding var enrolledCourses: [Course]
-    @State private var showFireworks = false  // State variable to control fireworks visibility
-    @State private var showDimmedBackground = false  // State variable to control background dimming
+    @State private var showFireworks = false
+    @State private var showDimmedBackground = false
 
     let columns: [GridItem] = [
         GridItem(.flexible(), spacing: 20),
@@ -60,9 +60,9 @@ struct CurrentCourses: View {
 struct CourseGridItem: View {
     @State private var badgeCount = 0
     let maxBadges = 5
-    let badgeImage = "1hrBadge"  // Image name from Assets.xcassets
-    let doneBadgeImage = "Done"  // New Done badge image name from Assets.xcassets
-    let ydBadgeImage = "YD"      // Image name for "YD" from Assets.xcassets
+    let badgeImage = "1hrBadge"
+    let doneBadgeImage = "Done"
+    let ydBadgeImage = "YD"
     let backgroundColors = [
         Color.red,
         Color.green,
@@ -87,9 +87,8 @@ struct CourseGridItem: View {
     @State private var badgePositions: [Badge] = []
     @State private var doneBadgeAdded = false
     @State private var showYDBadge = false
-    @Binding var showFireworks: Bool  // Binding to control fireworks visibility
-    @Binding var showDimmedBackground: Bool  // Binding to control background dimming
-
+    @Binding var showFireworks: Bool
+    @Binding var showDimmedBackground: Bool
     struct Badge: Identifiable {
         let id = UUID()
         var imageName: String
@@ -160,7 +159,7 @@ struct CourseGridItem: View {
                     if showYDBadge {
                         Image(ydBadgeImage)
                             .resizable()
-                            .frame(width: 200, height: 200)  // Fixed size for the YD badge
+                            .frame(width: 200, height: 200)
                             .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
                             .transition(.opacity)
                     }
@@ -180,7 +179,7 @@ struct CourseGridItem: View {
                     addYDBadge()
                     showDimmedBackground = true
                     showFireworks = true
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {  // Changed to 4 seconds
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
                         showFireworks = false
                         showDimmedBackground = false
                     }
@@ -203,7 +202,7 @@ struct CourseGridItem: View {
 
 struct CurrentCourses_Previews: PreviewProvider {
     static var previews: some View {
-        CurrentCourses(enrolledCourses: .constant([])) // Provide a placeholder empty array
+        CurrentCourses(enrolledCourses: .constant([]))
     }
 }
 

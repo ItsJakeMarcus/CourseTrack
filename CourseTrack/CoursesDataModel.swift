@@ -10,7 +10,7 @@ import Foundation
 struct Subject: Codable, Identifiable {
     let id = UUID()
     let subjectName: String
-    var courses: [Course] // Changed from let to var
+    var courses: [Course]
 }
 
 
@@ -22,7 +22,7 @@ struct Course: Codable, Identifiable {
     let description: String
     let instructors: [Instructor]
     var enrolled: Bool = false
-    var isEnrolled: Bool = false// New property with a default value
+    var isEnrolled: Bool = false
 
     private enum CodingKeys: String, CodingKey {
         case courseTitle, description, instructors
